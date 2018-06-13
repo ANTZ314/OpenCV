@@ -1,0 +1,23 @@
+------------
+Description:
+------------
+credit1:
+	-> ocr.py 	- 
+
+credit2:
+	-> credit.py	- Takes input image and crops rectangle of Card
+			- Then uses cropped image to find card details and output to console
+	-> crop2	- Convert to greyscale, find contours of card 
+			- Crops the rectangular outlines of card and saves to new zoomed image
+	-> ocr.py	- Using the reference characters as training it will find and recognise characters in the image
+
+-----
+From:
+-----
+http://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python/
+
+----------------
+To run the code:
+----------------
+python ocr_template_match.py --image images/credit_card_01.png --reference ocr_a_reference.png
+

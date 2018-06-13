@@ -1,0 +1,37 @@
+===============================================================
+Compile and run C code:
+-----------------------
+
+Works Best:
+-----------
+$ gcc file.c -o exfile
+
+-> Then to build and run:
+$ sudo ./test1
+
+
+===============================================================
+First create your "CMakeLists.txt" file (with .cpp filename) 
+in the same directory as the .cpp file.
+
+$ cd <DisplayImage_directory>
+$ cmake .
+$ make
+$ ./FileExec refFile.jpg
+
+===============================================================
+Error:
+error: (-215) scn == 3 || scn == 4 in function cvtColor
+
+Solved:
+use full image file path
+
+------------------------------------------------------------------
+Error:
+(cnts, _) = cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+ValueError: too many values to unpack (expected 2)
+
+Solved:
+change to -> (_, cnts, _) = cv2.findContours(...)
+
+------------------------------------------------------------------

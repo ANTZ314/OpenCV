@@ -1,0 +1,52 @@
+------------
+Description:
+------------
+Tesseract is an OCR engine with support for unicode and the ability to recognize 
+more than 100 languages out of the box. It can be trained to recognize other 
+languages.
+Tesseract is unable to recognize handwriting and is limited to about 64 fonts in total.
+
+---------------------
+From [PyImageSearch]:
+---------------------
+http://www.pyimagesearch.com/2017/07/03/installing-tesseract-for-ocr/
+http://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/
+
+Other:
+https://www.linux.com/blog/using-tesseract-ubuntu
+
+-------------------------
+To run the tesseract OCR:
+-------------------------
+-> Make sure the image is:
+	=> Highest resolution possible
+	=> Highest contrast possible 
+	=> Large as possible
+
+$ cd to image location (if necessary)
+$ tesseract image.png stdout
+
+===============================================================================
+Using Python and Tesserect:
+===========================
+------------
+Description:
+------------
+Python-tesseract is a python wrapper for google’s Tesseract-OCR.
+
+--------
+Install:
+--------
+$ sudo apt-get update
+$ sudo pip install pytesseract
+
+--------
+Example:
+----------------------------------------------------
+from pytesseract import image_to_string 
+import Image
+print image_to_string(Image.open('captcha.png'))
+----------------------------------------------------
+
+
+

@@ -1,0 +1,52 @@
+
+"""
+From:
+https://stackoverflow.com/questions/44383209/how-to-detect-edge-and-crop-an-image-in-python
+
+Description:
+Input image of signature, greyscales the signature and crops image [img3.jpg]
+
+How:
+1. Convert to grayscale
+2. Threshold the image to only get the signature and nothing else
+3. Find where those pixels are that show up in the thresholded image
+4. Crop around that region in the original grayscale
+5. Create a new thresholded image from the crop that isn't as strict for display
+
+Run:
+python crop.py --image img3.jpg
+"""
+
+import cv2
+import numpy as np
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--image", help = "path to the image")
+args = vars(ap.parse_args())
+
+# load image
+img = cv2.imread(args["image"])
+#img = cv2.imread('/home/antz/0_CV3/z-Test/crop/crop3/img3.jpg')
+rsz_img = cv2.resize(img, None, fx=0.25, fy=0.25) # resize since image is huge
+gray = cv2.cvtColor(rsz_img, cv2.COLOR_BGR2GRAY) # convert to grayscale
+
+# threshold to get just the signature
+retval, thresh_gray = cv2.threshold(gray, thresh=100, maxval=255, type=cv2.THRESH_BINARY)
+
+# find where the signature is and make a cropped region
+points = np.argwhere(thresh_gray==0) # find where the black pixels are
+points = np.fliplr(points) # store them in x,y coordinates instead of row,col indices
+x, y, w, h = cv2.boundingRect(points) # create a rectangle around those points
+x, y, w, h = x-10, y-10, w+20, h+20 # make the box a little bigger
+crop = gray[y:y+h, x:x+w] # create a cropped region of the gray image
+
+# get the thresholded crop
+retval, thresh_crop = cv2.threshold(crop, thresh=200, maxval=255, type=cv2.THRESH_BINARY)
+
+# save image
+cv2.imwrite('output.png',thresh_crop)
+
+# display
+cv2.imshow("Cropped and thresholded image", thresh_crop) 
+cv2.waitKey(0)

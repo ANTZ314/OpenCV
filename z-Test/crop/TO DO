@@ -1,0 +1,15 @@
+
+STILL TO DO:
+
+* Check input image size:
+	-> If larger than MAX process size
+	-> resize to approx. 640x480 (check max size)
+
+x Find card contours (done)
+
+x Crop image to just card & save image
+
+x Find card number in card and save as integers
+
+* Put all together
+

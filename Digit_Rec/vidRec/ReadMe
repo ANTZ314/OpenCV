@@ -1,0 +1,21 @@
+------------
+Description:
+------------
+Supposed to realtime find OCR, but over-analyzes and crashes
+
+Try second version - simplified for default camera?
+
+---------------------
+From:
+---------------------
+https://stackoverflow.com/questions/42753988/digit-recognition-with-opencv-and-python
+
+-------------------------
+To run OCR:
+-------------------------
+python handwrite.py digits_cls2.plk photo_1.jpg
+
+
+
+
+

@@ -1,0 +1,3 @@
+/home/antz/0_CV3/Test/coins/CMakeFiles/edit_cache.dir
+/home/antz/0_CV3/Test/coins/CMakeFiles/rebuild_cache.dir
+/home/antz/0_CV3/Test/coins/CMakeFiles/ObjDet.dir

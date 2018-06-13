@@ -1,0 +1,22 @@
+-----------------------
+Run the code like this:
+-----------------------
+Remember to activate virtual enviroment:
+----------------------------------------
+source /home/antz/virtualenv/CVenv/bin/activate
+------------------------------
+
+------------------------------------------------
+To run main: (single image)
+------------------------------------------------
+$ python Face.py
+
+------------------------------------------------
+To run the OpenCV3 version, backups:
+------------------------------------------------
+$ python faceCnt1.py /home/antz/0_CV3/pics/gr0.jpg haarcascade_frontalface_default.xml
+$ python faceCnt2.py /home/antz/0_CV3/pics/gr0.jpg
+
+==============================================================================================
+
+----------------------------------------------------------------------------------------------

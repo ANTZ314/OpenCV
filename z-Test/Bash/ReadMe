@@ -1,0 +1,16 @@
+=====================================
+	BASH INSTRUCTIONS
+=====================================
+After creating the bash file (.sh)
+navigate to file location
+
+$ chmod +x bahsfile.sh
+$ ./bashfile.sh
+
+
+Make sure image storage file paths are correct!!
+
+=====================================
+	VIDEO PLAYBACK
+=====================================
+$ omxplayer video.h264

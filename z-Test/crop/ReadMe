@@ -1,0 +1,9 @@
+
+Description:
+============
+
+countours	- finds coutours (3 ways) of all objects in an image
+crop1		- finds each object in an image and crops each to new image
+crop2		- find edges of signature and crop to single image (saves)
+crop3		- multiple experiments of each on diff images
+crop4		- find card contours and crop card

@@ -9,6 +9,7 @@ by CV recognition code, but for best accuracy and correct feature selection, the
 
 #### Image Comparison:
 * Compare two images of the same dimensions and output a third image as a result
+* Mark in video when something has been moved in 'X' amount of time
 
 #### Object Detection/Recognition:
 * Deep Larning sample training, or with CV directly
