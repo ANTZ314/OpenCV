@@ -2,10 +2,14 @@
 ---------
 
 #### pedestrian:  
-- MISSING
+* motionDet
+* pedestrianDet
+* surveillance
+* Track
  
 #### imageScrape:  
-- MISSING
+* google
+* timecoverspider - removed for completion (Document/Personal)
 
 #### colour:  
 * Detect - 
