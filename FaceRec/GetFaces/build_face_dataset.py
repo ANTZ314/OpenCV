@@ -1,6 +1,5 @@
-# -*- coding: utf-8 -*-
 # USAGE
-# python3 build_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
+# python build_face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
 
 # import the necessary packages
 from imutils.video import VideoStream
@@ -21,8 +20,9 @@ args = vars(ap.parse_args())
 # load OpenCV's Haar cascade for face detection from disk
 detector = cv2.CascadeClassifier(args["cascade"])
 
-# initialize the video stream, allow the camera sensor to warm up, &
-# initialize the total number of example faces written to disk so far
+# initialize the video stream, allow the camera sensor to warm up,
+# and initialize the total number of example faces written to disk
+# thus far
 print("[INFO] starting video stream...")
 vs = VideoStream(src=0).start()
 # vs = VideoStream(usePiCamera=True).start()

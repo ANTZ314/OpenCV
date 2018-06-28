@@ -1,13 +1,20 @@
 
-Yann LeCun:
+# Handwriting Recognition:
+
+-------------------------------------------------------------------------
+**A Guide to TF Layers: Building a Convolutional Neural Network:**  
+https://www.tensorflow.org/tutorials/layers
+
+-------------------------------------------------------------------------
+**Yann LeCun:**  
 THE MNIST DATABASE of handwritten digits:
 http://yann.lecun.com/exdb/mnist/
 
----------------------------------------------------------------------------------
-Handwritten digit database:
+-------------------------------------------------------------------------
+**Handwritten digit database:**  
 http://cis.jhu.edu/~sachin/digit/digit.html
 
-File format:
+**File format:**  
 Each file has 1000 training examples. Each training example is of 
 size 28x28 pixels. The pixels are stored as unsigned chars (1 byte) 
 and take values from 0 to 255. The first 28x28 bytes of the file 
@@ -21,9 +28,9 @@ fid=fopen(data8,r);			-- open the file corresponding to digit 8
 
 To display the image use imshow(t1)
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-Digit Recognition using OpenCV, sklearn and Python:
+**Digit Recognition using OpenCV, sklearn and Python:**  
 http://hanzratech.in/2015/02/24/handwritten-digit-recognition-using-opencv-sklearn-and-python.html
 
 
