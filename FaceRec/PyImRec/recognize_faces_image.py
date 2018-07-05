@@ -1,6 +1,11 @@
-# USAGE
-# python recognize_faces_image.py --encodings encodings.pickle --image examples/example_01.png 
+# -*- coding: utf-8 -*-
+"""
+Description:
+Using the trained kNN network file "encodings.pickle" will make a prediction on parsed image
 
+Usage:
+# python3 recognize_faces_image.py --encodings encodings.pickle --image /home/antz/0_samples/faceRec/examples/example_01.png
+"""
 # import the necessary packages
 import face_recognition
 import argparse

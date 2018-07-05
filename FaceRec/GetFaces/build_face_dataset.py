@@ -1,6 +1,14 @@
-# USAGE
-# python build_face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
+# -*- coding: utf-8 -*-
+"""
+Description:
+Will use opencv to find & frame instances of faces being recognised, then use keyboard to manually
+capture training samples of the faces you want to train with.
 
+Usage:
+# python3 build_face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
+
+Use the 'k' key to capture and the 'q' key to quit
+"""
 # import the necessary packages
 from imutils.video import VideoStream
 import argparse
@@ -19,7 +27,7 @@ args = vars(ap.parse_args())
 
 # load OpenCV's Haar cascade for face detection from disk
 detector = cv2.CascadeClassifier(args["cascade"])
-
+q
 # initialize the video stream, allow the camera sensor to warm up,
 # and initialize the total number of example faces written to disk
 # thus far

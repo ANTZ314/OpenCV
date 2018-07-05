@@ -1,6 +1,11 @@
-# USAGE
-# python encode_faces.py --dataset dataset --encodings encodings.pickle
+# -*- coding: utf-8 -*-
+"""
+Description:
+Will take a given training set data location and create a serialised image quantified file "encodings.pickle"
 
+Usage:
+# python encode_faces.py --dataset /home/antz/0_samples/faceRec/dataset --encodings encodings.pickle
+"""
 # import the necessary packages
 from imutils import paths
 import face_recognition
