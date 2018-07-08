@@ -4,7 +4,8 @@ Description:
 Will take a given training set data location and create a serialised image quantified file "encodings.pickle"
 
 Usage:
-# python encode_faces.py --dataset /home/antz/0_samples/faceRec/dataset --encodings encodings.pickle
+python3 encode_faces.py --dataset /home/antz/0_samples/faceRec/dataset --encodings encodings.pickle
+python3 encode_faces.py --dataset /home/antz/0_samples/faceRec/ant_smith --encodings encodings.pickle
 """
 # import the necessary packages
 from imutils import paths
