@@ -4,7 +4,7 @@ Description:
 Using the trained kNN network file "encodings.pickle" will make a prediction on parsed image
 
 Usage:
-# python3 recognize_faces_image.py --encodings encodings.pickle --image /home/antz/0_samples/faceRec/examples/example_01.png
+python3 faceRecImage.py --encodings encodings.pickle --image /home/antz/0_samples/faceRec/examples/sin1.jpg
 """
 # import the necessary packages
 import face_recognition
