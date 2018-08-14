@@ -1,6 +1,8 @@
 # OpenCV
 ---------
 
+**note**: All sample images and videos mvoe to home folder to avoid large uploads to Github
+
 #### pedestrian:  
 * motionDet
 * pedestrianDet
@@ -8,8 +10,8 @@
 * Track
  
 #### imageScrape:  
-* google
-* timecoverspider - removed for completion (Document/Personal)
+* google - 
+* timecoverspider - 
 
 #### colour:  
 * Detect - 
