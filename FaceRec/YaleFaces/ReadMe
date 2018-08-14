@@ -1,0 +1,12 @@
+=========================================================
+To Activate:
+source /home/antz/virtualenv/CVenv/bin/activate
+=========================================================
+
+From:
+http://hanzratech.in/2015/02/03/face-recognition-using-opencv.html
+
+To Run the Code:
+pytohn face_recognizer.py
+
+======================================================

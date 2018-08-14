@@ -1,9 +1,6 @@
-# PyImageRec:  
+# PyImageRec:
 
-All tutorials from ** Adrian Rosebrock's ** website purely done for the purpose of learning:  
-[PyImageSource](https://www.pyimagesearch.com/)
-
-### To create a custome [Dataset](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/?__s=58mz3v4pfx9s2vjxvqgi)
+### To Gather the [Dataset](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/?__s=58mz3v4pfx9s2vjxvqgi)
 
 Folder:	
 
@@ -47,7 +44,7 @@ NOTE: For CPU -> set the **--detection-method** to **hog**  as the CNN face dete
 	$ python3 recognize_faces_image.py --encodings encodings.pickle --image /home/antz/0_samples/faceRec/examples/example_01.png
     
 -------------------
-### Raspberry Pi Face [Recognition](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/)  
+#### Raspberry Pi Face [Recognition](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/)  
 
 Folder: 
 
@@ -57,21 +54,15 @@ Folder:
 **Desciption:**  
 x
 
-**Install Dependencies:**  
-
-    pip install dlib  
-    pip install face_recognition  
-    pip install imutils  
-
 **To Run the Code:**  
 
 	$ python3 pi_face_recognition.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle
 
 
 ------------
-# YaleFaces Recognition:
+# YaleFaces:
 
-###  Untested fully: [link](http://hanzratech.in/2015/02/03/face-recognition-using-opencv.html)
+###  [link](http://hanzratech.in/2015/02/03/face-recognition-using-opencv.html)
 
 **To Run the Code:**
 

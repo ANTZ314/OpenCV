@@ -43,3 +43,8 @@ Finally:
         
 * Then move the stored "URL.txt" file to the working folder
 * Now with the URL list in the working folder, run the Python Script
+
+### Moved scraped image example folders to "Samples"
+
+immagescrape -> google -> images -> santa  
+timecoverspider -> output -> full

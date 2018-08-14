@@ -1,14 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Description:
-Using the trained kNN network file "encodings.pickle" will make a prediction on parsed image
+# USAGE
+# python download_images.py --urls urls.txt --output images/santa
 
-Link:
-https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/
-
-USAGE
-python3 download_images.py --urls urls.txt --output images/sins
-"""
 # import the necessary packages
 from imutils import paths
 import argparse

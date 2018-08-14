@@ -1,12 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Description:
-Uses OpenCV to detect and draw bounding box around motion found in input video (camera?)
+# USAGE
+# python motion_detector.py
+# python motion_detector.py --video videos/example_01.mp4
 
-USAGE
-# python3 motion_detector.py
-# python3 motion_detector.py --video videos/example_01.mp4
-"""
 # import the necessary packages
 import argparse
 import datetime
