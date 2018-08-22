@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """
 Description:
-Opens default camera, finds motion & outlines
+Opens default camera, finds motion, draws bounding box
+Prints date/time every 50 detected frames
 Press 'q' to exit
 
 Run the program like this:
-$ python webcam.py 
+python detect3.py 
 """
 import cv2
 import sys

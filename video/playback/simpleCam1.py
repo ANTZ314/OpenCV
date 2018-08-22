@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Capture Video from Camera
+View Video stream from Camera:
 http://docs.opencv.org/3.1.0/dd/d43/tutorial_py_video_display.html
+
 Description:
-Basic video playback in monochrome from camera source
-'q' to quit
+Basic video playback in monochrome from camera source ('q' to quit)
 """
 
 import numpy as np

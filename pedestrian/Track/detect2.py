@@ -4,7 +4,8 @@ Link:
 https://stackoverflow.com/questions/34871294/full-body-detection-and-tracking-using-opencvpython-2-7
 
 Description:
-Opens specified video file attempts to detect pedestrian (many errors)
+Opens specified video file attempts to detect pedestrian.
+Multiple false positives and EXTREMELY slow frame rate.
 "esc" to exit
 
 RUN:
@@ -32,7 +33,7 @@ if __name__ == '__main__':
 
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector( cv2.HOGDescriptor_getDefaultPeopleDetector() )
-    cap=cv2.VideoCapture('/home/antz/0_CV3/z_samples/pedVid/test2.mp4')
+    cap=cv2.VideoCapture('/home/antz/0_samples/pedestrian/motion/ex01.mp4')
     
     while True:
         _,frame=cap.read()

@@ -3,6 +3,9 @@
 Description:
 Using the trained kNN network file "encodings.pickle" will make a prediction on parsed image
 
+Dependencies:
+OpenCV3, imutils & dlib must be installed prior to use.
+
 Usage:
 python3 facial_landmarks.py
 """

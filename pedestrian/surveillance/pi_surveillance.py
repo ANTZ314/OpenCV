@@ -1,6 +1,11 @@
-# USAGE
-# python pi_surveillance.py --conf conf.json
+# -*- coding: utf-8 -*-
+"""
+Description:
+Specifically written for Raspberry Pi - PiCamera
 
+USAGE:
+python pi_surveillance.py --conf conf.json
+"""
 # import the necessary packages
 from pyimagesearch.tempimage import TempImage
 from picamera.array import PiRGBArray

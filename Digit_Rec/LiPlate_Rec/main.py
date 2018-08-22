@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Description:
+
+
+Usage:
+
+"""
 from modules.file_utils import *;
 from modules.Plate import *;
 from modules.TrainingCharacter import *;

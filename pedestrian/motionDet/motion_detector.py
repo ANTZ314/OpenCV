@@ -1,7 +1,13 @@
-# USAGE
-# python motion_detector.py
-# python motion_detector.py --video videos/example_01.mp4
+# -*- coding: utf-8 -*-
+"""
+Description:
+Displays 3 windows for tracking motion (frame, threshhold & frameDelta)
+(NOT OPENING VIEO FILE???)
 
+Usage:
+python motion_detector.py
+python motion_detector.py --video /home/antz/0_samples/pedestrian/motion/ex_01.mp4
+"""
 # import the necessary packages
 import argparse
 import datetime
@@ -49,16 +55,15 @@ while True:
 		firstFrame = gray
 		continue
 
-	# compute the absolute difference between the current frame and
-	# first frame
+	# compute the absolute difference between the current frame and first frame
 	frameDelta = cv2.absdiff(firstFrame, gray)
 	thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
 
 	# dilate the thresholded image to fill in holes, then find contours
 	# on thresholded image
 	thresh = cv2.dilate(thresh, None, iterations=2)
-	(cnts, _) = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
-		cv2.CHAIN_APPROX_SIMPLE)
+	#(cnts, _) = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+	(_, cnts, _)= cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
 	# loop over the contours
 	for c in cnts:
@@ -66,8 +71,7 @@ while True:
 		if cv2.contourArea(c) < args["min_area"]:
 			continue
 
-		# compute the bounding box for the contour, draw it on the frame,
-		# and update the text
+		# compute the bounding box for the contour, draw it on the frame, and update the text
 		(x, y, w, h) = cv2.boundingRect(c)
 		cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 		text = "Occupied"

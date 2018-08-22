@@ -1,13 +1,8 @@
 """
-From:
-link:xxx
-
 Description:
 
 
 RUN:
-python performRec.py
-Or add arguments:
 python performRec.py photo_1.jpg
 """
 

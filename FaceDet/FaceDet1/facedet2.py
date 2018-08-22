@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
-## OpenCV3 with Python 2.x ##
+"""
+OpenCV3 with Python 3
+
+Description:
+Opens referenced image and detects faces, then prints number faces found
+Note: flag line removed for some reason??
+
 # To Run:
 # python face_detect.py /image/path/image.jpg
+"""
 import cv2
 import sys
 

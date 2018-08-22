@@ -9,8 +9,7 @@ Opens images and detects pedestrians in each and corrects for false positives
 Displays before and after correction, prints box number difference
 
 RUN:
-python detect1.py --images images									# move images
-python detect1.py --images /home/antz/0_CV3/z_samples/pedImg
+python detect1.py --images /home/antz/0_samples/pedestrian/pedestrianDet
 """
 
 
@@ -18,7 +17,7 @@ python detect1.py --images /home/antz/0_CV3/z_samples/pedImg
 from __future__ import print_function
 from imutils.object_detection import non_max_suppression
 from imutils import paths
-import numpy as np
+import numpy as nps
 import argparse
 import imutils
 import cv2

@@ -1,5 +1,12 @@
-# USAGE
-# python detect.py --images images
+# -*- coding: utf-8 -*-
+"""
+Description:
+Locates pedestrians in parsed image, draws bounding box and prints number of pedestrians found
+Displays before and after images comparison of Non-Maxima Suppression with overlapping threshold.
+
+Usage:
+python detect.py --images /home/antz/0_samples/pedestrian/pedestrianDet
+"""
 
 # import the necessary packages
 from __future__ import print_function
