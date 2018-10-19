@@ -13,7 +13,7 @@ Project Path:
 $ cd /home/antz/0_CV3/Digit_Rec/digitRec
 
 Run the code on new imgae:
-$ python performRec.py imgs/img1.jpg
+$ python performRec.py /home/antz/0_samples/digitRec/Digit/img5.jpg
 
 -----
 NOTE! Project is in python2

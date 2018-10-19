@@ -22,6 +22,10 @@ Folder:
 * /home/antz/GIT31/OpenCV/FaceRec/PyImRec
 * /home/antz/0_samples/faceRec **(samples too big for Github)**
 
+**Dependencies**
+* face_recognition
+* dlib
+
 **Desciption:**  
 
 * **search_bing_api.py** : Step 1 is to build a dataset (I’ve already done this for you). To learn how to use the Bing API to build a dataset with my script, just see this blog post.
@@ -67,5 +71,3 @@ x
 **To Run the Code:**
 
 	$ pytohn face_recognizer.py
-
-======================================================

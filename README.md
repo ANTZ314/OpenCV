@@ -28,7 +28,9 @@
 	* find_games2.py - Opens parsed image and detects 4 colors and filters the color
 
 #### Digit_Rec:  
-* CreditCard - 
+* CreditCard
+	* credit1 - Takes input image and crops rectangle of Card &  uses cropped image to find card details and output to console
+	* credit2 - Convert to greyscale, find contours of card. Crops the rectangular outlines of card and saves to new zoomed image
 * digitRec - 
 * Handwriting_Database - 
 * LiPlate_Rec - 
@@ -67,4 +69,3 @@
 * Games - 
 * PiCam - 
 * Resize - 
-
