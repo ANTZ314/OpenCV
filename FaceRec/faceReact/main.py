@@ -15,12 +15,13 @@ def main():
     Data = Dataset.DatasetClass()           # Create object to access 'Face Capture' Class
     Face = Recog.RecogClass()				# Create object to access 'Recognition Testing' Class
     
-    key = input("`y` to capture")
+    key = input("Capture new image: y/n - ")
     if key == 'y':
-    	Data.getPerson()                   		# allow for manual capture of person
+        print("Then press k to capture the image")
+        Data.getPerson()                   		# allow for manual capture of person
 
     while(1):
-    	key = input("Press a key: `a` to test, `q` to quit -> ")
+    	key = input("Press: `a` to test, `q` to quit: ")
 
     	if key == 'a':
     		print("Find the face!!")
