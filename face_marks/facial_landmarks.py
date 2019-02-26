@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Description:
+Detect facial landmarks using dlib and OpenCV
+
+Usage:
+python3 facial_landmarks.py
+"""
 # import the necessary packages
 from imutils import face_utils
 import dlib
@@ -10,9 +18,11 @@ detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(p)
  
 # load the input image and convert it to grayscale
-image = cv2.imread("example.jpg")
+#image = cv2.imread("/home/antz/0_samples/faceRec/examples/example.jpg")
+#gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+image = cv2.imread("/home/antz/0_samples/faceRec/examples/example.jpg")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
- 
+
 # detect faces in the grayscale image
 rects = detector(gray, 0)
  

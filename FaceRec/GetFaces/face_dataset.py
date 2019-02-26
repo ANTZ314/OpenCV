@@ -5,7 +5,7 @@ Will use opencv to find & frame instances of faces being recognised, then use ke
 capture training samples of the faces you want to train with.
 
 Usage:
-# python3 face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
+python3 face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
 
 Use the 'k' key to capture and the 'q' key to quit
 """

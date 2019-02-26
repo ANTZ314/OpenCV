@@ -1,7 +1,14 @@
-# USAGE
-# python recognize_faces_video.py --encodings encodings.pickle
-# python recognize_faces_video.py --encodings encodings.pickle --output /home/antz/0_samples/faceRec/output/jurassic_park_trailer_output.avi --display 0
+# -*- coding: utf-8 -*-
+"""
+Description:
+Using the trained kNN network file "encodings.pickle" will make a prediction on video
 
+Input Note: Not sure how to input video file &/or use web directly?? - Check tutorial!
+
+USAGE
+python faceRecVideo.py --encodings encodings.pickle
+python faceRecVideo.py --encodings encodings.pickle --output /home/antz/0_samples/faceRec/output/jurassic_park_trailer_output.avi --display 0
+"""
 # import the necessary packages
 from imutils.video import VideoStream
 import face_recognition
@@ -101,7 +108,7 @@ while True:
 	# if the video writer is None *AND* we are supposed to write
 	# the output video to disk initialize the writer
 	if writer is None and args["output"] is not None:
-		fourcc = cv2.VideoWriter_fourcc(*"MJPG")
+		fourcc = cv2.VideoWriter_fourcc(*"MJPG")				# for mp4: (*"mp4v")
 		writer = cv2.VideoWriter(args["output"], fourcc, 20,
 			(frame.shape[1], frame.shape[0]), True)
 

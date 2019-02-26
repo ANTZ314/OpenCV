@@ -17,7 +17,7 @@ def main():
     
     key = input("Capture new image: y/n - ")
     if key == 'y':
-        print("Then press k to capture the image")
+        print("Then press k to capture & q to exit")
         Data.getPerson()                   		# allow for manual capture of person
 
     while(1):

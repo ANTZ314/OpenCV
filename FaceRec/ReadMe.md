@@ -28,10 +28,12 @@ Folder:
 
 **Desciption:**  
 
-* **search_bing_api.py** : Step 1 is to build a dataset (I’ve already done this for you). To learn how to use the Bing API to build a dataset with my script, just see this blog post.
-* **encode_faces.py** : Encodings (128-d vectors) for faces are built with this script.  
-* **recognize_faces_image.py** : Recognize faces in a single image (based on encodings from your dataset).  
+* **encode_faces.py** : Encodings (128-d vectors) for faces are built with this script. Point to training set (min 5 images?)  
+* **faceRecImage.py** : Recognize faces in a single image (based on encodings from your dataset).  
+**faceRecVideo.py** : Recognise faces based on the pre-trained **encode_faces.pickle** file in parsed video file.  
 * **encodings.pickle** : Facial recognitions encodings are generated from your dataset via encode_faces.py and then serialized to disk.  
+
+####Note:
 
 No need to train a new network due to using pretrained network based on ~3 million images to construct 128-d embeddings for each image in the training set.  
 The encoding stage will quantify serialise the the faces data into a file named **"encodings.pickle"**.  
@@ -45,7 +47,9 @@ NOTE: Remember to set the correct training set file path:
 **To Recognise the Faces:**  
 NOTE: For CPU -> set the **--detection-method** to **hog**  as the CNN face detector is slow without a GPU and RasPi doesn't have enough memory.
 
-	$ python3 recognize_faces_image.py --encodings encodings.pickle --image /home/antz/0_samples/faceRec/examples/example_01.png
+	$ python faceRecImage.py --encodings encodings.pickle --image /home/antz/0_samples/faceRec/examples/ex0.png
+	
+	$ python faceRecVideo.py --encodings encodings.pickle --output /home/antz/0_samples/faceRec/output/faceRec.avi --display 0
     
 -------------------
 #### Raspberry Pi Face [Recognition](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/)  

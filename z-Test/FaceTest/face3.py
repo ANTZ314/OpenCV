@@ -3,11 +3,14 @@ import sys
 
 #-- Get user supplied values --#
 imagePath = 'gr0.jpg'
+
 faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 #-- Read the image --#
-image = cv2.imread(imagePath)					# load the image path
-gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)	# Convert to greyscale
+image = cv2.imread("/home/antz/0_samples/faceRec/examples/example.jpg")
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#image = cv2.imread(imagePath)					# load the image path
+#gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)	# Convert to greyscale
 
 #-- Detect faces in the image --#
 faces = faceCascade.detectMultiScale(
