@@ -17,7 +17,7 @@ Will use opencv to find & frame instances of faces being recognised, then use ke
 -------------------
 ### PyImageSearch Face recognition [Tutorial](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)  
 
-Folder:		
+Path:		
 
 * /home/antz/GIT31/OpenCV/FaceRec/PyImRec
 * /home/antz/0_samples/faceRec **(samples too big for Github)**
@@ -50,17 +50,48 @@ NOTE: For CPU -> set the **--detection-method** to **hog**  as the CNN face dete
 	$ python faceRecImage.py --encodings encodings.pickle --image /home/antz/0_samples/faceRec/examples/ex0.png
 	
 	$ python faceRecVideo.py --encodings encodings.pickle --output /home/antz/0_samples/faceRec/output/faceRec.avi --display 0
+
+-------------------
+#### faceReact
+
+**Path:**
+
+* /home/antz/GIT31/OpenCV/FaceRec/faceReact
+
+**Description:** 
+
+**main.py** - Main Class calling 2 other classes: dataset.py & recog.py. Also recieves the classification and determines the reaction.
+* **dataset.py** - Determine an instance of facial detection to Capture an clean facial image from default camera. 
+* **recog.py** - Using the previously generated "encodings.pickle" file, it performs a classification of the capture face. If there is a match, a video is played. If there is no match a specified gif is played.
+
+ **To Run the Code:**  
+ 
+ 	$ python3 main.py
     
 -------------------
 #### Raspberry Pi Face [Recognition](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/)  
 
-Folder: 
+Path: 
 
 * /home/antz/GIT31/OpenCV/FaceRec/RasFaceRec
 * /home/antz/0_samples/faceRec **(samples too big for Github)**
 
+**Dependencies:**
+* face_recognition
+* dlib
+* pickle
+* cv2
+
 **Desciption:**  
-x
+
+* **Original** - Directly from tutorial where classifier is optimised for the RasPi and will recognise in camera video stream.
+
+* **rasFaceRec**  
+
+	* My adapted version from faceReact, using single image capture for recognition and then react to classification. 
+* Changed cnn to **hog** due to processing power and available memory.
+* Replaced **subprocess** with **xdg-open** to play reactionary videos.
+* Hopefully replace video reaction with **LOCK** or **UNLOCK**
 
 **To Run the Code:**  
 

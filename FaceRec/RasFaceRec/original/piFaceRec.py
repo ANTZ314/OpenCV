@@ -1,6 +1,11 @@
-# USAGE
-# python pi_face_recognition.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle
+# -*- coding: utf-8 -*-
+"""
+USAGE
+python piFaceRec.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle
 
+Description:
+
+"""
 # import the necessary packages
 from imutils.video import VideoStream
 from imutils.video import FPS
@@ -64,8 +69,7 @@ while True:
 	for encoding in encodings:
 		# attempt to match each face in the input image to our known
 		# encodings
-		matches = face_recognition.compare_faces(data["encodings"],
-			encoding)
+		matches = face_recognition.compare_faces(data["encodings"], encoding)
 		name = "Unknown"
 
 		# check to see if we have found a match

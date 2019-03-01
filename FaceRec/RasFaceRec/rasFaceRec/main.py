@@ -1,14 +1,18 @@
 # -*- coding: utf-8 -*-
 """
 Description:
-main
+Main class calling data capture class and facial recognition class
+Also uses classification results to decide reaction and play video accordingly
 
 Usage:
 python3 main.py
 """
 import dataset as Dataset
 import recog as Recog
-import os
+import os, subprocess
+
+dog = "/home/antz/GIT31/OpenCV/FaceRec/faceReact/dataset/dog.gif"
+tit = "/home/antz/GIT31/OpenCV/FaceRec/faceReact/dataset/tit.gif"
 
 def main():
     #Here we show how to instantiate your class
@@ -30,10 +34,14 @@ def main():
     		# if no name was prominent
     		if person == "Unknown":
     			print("ACCESS DENIED MOFO!!!")
-    			os.system('xdg-open dataset/dog.gif')
+    			#os.system('xdg-open dataset/dog.gif')
+                subprocess.call(['vlc',dog,'--play-and-exit'])      # ESC to exit vlc
     		else:
     			print("YOU MAY ENTER!!!")
-    			os.system('xdg-open dataset/tit.gif')
+    			#os.system('xdg-open dataset/tit.gif')
+                subprocess.call(['vlc',tit,'--play-and-exit'])      # ESC to exit vlc
+
+            print("complete!")
 
     	elif key == 'q':
     		break
