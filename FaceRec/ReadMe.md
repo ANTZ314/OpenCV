@@ -1,21 +1,34 @@
 # PyImageRec:
 
-### To Gather the [Dataset](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/?__s=58mz3v4pfx9s2vjxvqgi)
+###  [GetFaces](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/?__s=58mz3v4pfx9s2vjxvqgi)
 
-Folder:	
+A "pickle" file is used as the reference file for facial inference.
+To generate the dataset for training this pickle file, you must capture CV recognised facial instances of the person you wish to train on.
+
+**Path:**	
 
 * /home/antz/GIT31/OpenCV/FaceRec/GetFaces
 
 **Desciption:**  
 Will use opencv to find & frame instances of faces being recognised, then use keyboard to manually capture training samples of the faces you want to train with.
+Use the **'k'** key to capture the face to the specified folder.
+
+**Dependencies:**
+
+* argparse
+* imutils
+* opencv
 
 **To Run the Code:**  
 
 	# Use the 'k' key to capture and the 'q' key to quit
-    $ python3 build_face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
+	
+    $ python3 face_dataset.py --cascade haarcascade_frontalface_default.xml --output dataset/antz
 
 -------------------
-### PyImageSearch Face recognition [Tutorial](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)  
+### PyImRec
+
+PyImageSearch Face recognition [Tutorial](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)  
 
 Path:		
 
@@ -23,6 +36,7 @@ Path:
 * /home/antz/0_samples/faceRec **(samples too big for Github)**
 
 **Dependencies**
+
 * face_recognition
 * dlib
 
@@ -52,7 +66,7 @@ NOTE: For CPU -> set the **--detection-method** to **hog**  as the CNN face dete
 	$ python faceRecVideo.py --encodings encodings.pickle --output /home/antz/0_samples/faceRec/output/faceRec.avi --display 0
 
 -------------------
-#### faceReact
+### faceReact
 
 **Path:**
 
@@ -67,11 +81,12 @@ NOTE: For CPU -> set the **--detection-method** to **hog**  as the CNN face dete
  **To Run the Code:**  
  
  	$ python3 main.py
-    
+ 
 -------------------
-#### Raspberry Pi Face [Recognition](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/)  
+### RasFaceRec
+[Raspberry Pi Face Recognition](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/)  
 
-Path: 
+**Path:**
 
 * /home/antz/GIT31/OpenCV/FaceRec/RasFaceRec
 * /home/antz/0_samples/faceRec **(samples too big for Github)**
@@ -99,9 +114,9 @@ Path:
 
 
 ------------
-# YaleFaces:
+### YaleFaces:
 
-###  [link](http://hanzratech.in/2015/02/03/face-recognition-using-opencv.html)
+[link](http://hanzratech.in/2015/02/03/face-recognition-using-opencv.html)  - **UNTESTED**
 
 **To Run the Code:**
 
