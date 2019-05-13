@@ -93,6 +93,7 @@ NOTE: For CPU -> set the **--detection-method** to **hog**  as the CNN face dete
 
 **Dependencies:**
 * face_recognition
+* imutils
 * dlib
 * pickle
 * cv2

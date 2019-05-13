@@ -2,7 +2,9 @@
 ---------
 
 #### Create Dataset from Bing with API:
-* [Bing]()
+* [BING Image Search](https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/)
+
+* [Bing Image Search API](https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/?api=bing-image-search-api) - Requires Registration trial period
 
 #### Create Dataset from Manual Capture:
 * [Capture](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/)
