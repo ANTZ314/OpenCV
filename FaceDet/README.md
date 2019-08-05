@@ -13,7 +13,12 @@
 	$ python3 cam_det1.py
 	
 * facedet1.py - Opens referenced image and detects faces, then prints number faces found
-* facedet2.py - Opens referenced image and detects faces, then prints number faces found (flags line removed)
+* facedet2.py
+	- Deep Learning Face Detector in static images using pretrained Caffe Model
+	- Opens referenced image and detects faces, then prints number faces found (flags line removed)
+* det_faceVid.py - Using the trained kNN network file "encodings.pickle" will make a prediction on parsed image
+
+### MISSING??
 * cam_det1.py
 	* Opens default webcam and detects faces
 	* Every 200 frames of captured face prints date/time
@@ -34,10 +39,8 @@ Prints the % accuracy of facial detection
 
 	$ python3 det_faceImg.py --image test1.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel
 
-----------------------------------------------------------------------------------------------
-Change the "scaleFactor" for diff results:
+### Change the "scaleFactor" for diff results:
 -> 1.1 		- 8 correct (1 false)
 -> 1.15		- 9 correct (1 false)
 -> 1.2		- 7 correct (1 false)
 -> 1.25 	- 7 correct (0 false)
-----------------------------------------------------------------------------------------------
