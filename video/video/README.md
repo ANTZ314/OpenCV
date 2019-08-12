@@ -1,14 +1,13 @@
-==================
-Video-Face-Detect
-==================
 
-video1.py	- Plays specified video file and detects face within
+##Video-Face-Detect
+
+**video1.py**	- Plays specified video file and detects face within
 		- $ python video1.py path/vid_file.mp4
 
-video2.py	- Plays specified video file and detects face within
+**video2.py**	- Plays specified video file and detects face within
 		- $ python video1.py path/vid_file.mp4
 
-cam_det.py	- Opens default camera and detects face
+**cam_det.py**	- Opens default camera and detects face
 		- $ python video_cv3.py
 
 -----------------------------------------------------------------
