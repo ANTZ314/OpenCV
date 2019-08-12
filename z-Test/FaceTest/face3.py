@@ -1,3 +1,8 @@
+"""
+Usage:
+python face3.py
+"""
+
 import cv2
 import sys
 

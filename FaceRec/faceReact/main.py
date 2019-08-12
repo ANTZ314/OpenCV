@@ -31,9 +31,11 @@ def main():
     		if person == "Unknown":
     			print("ACCESS DENIED MOFO!!!")
     			os.system('xdg-open dataset/dog.gif')
+    			break
     		else:
     			print("YOU MAY ENTER!!!")
     			os.system('xdg-open dataset/tit.gif')
+    			break
 
     	elif key == 'q':
     		break
@@ -41,6 +43,6 @@ def main():
     	else:
     		print("Invalid Selection Retard!!")
 
-    print("EXITING...")
+    print("COMPLETE...")
     
 if __name__ == "__main__": main()

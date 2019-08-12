@@ -13,8 +13,8 @@ import argparse
 import pickle
 import cv2
 
-pickleFile = "/home/antz/GIT31/OpenCV/FaceRec/faceReact/encodings.pickle"
-faceImage = "/home/antz/GIT31/OpenCV/FaceRec/faceReact/dataset/00000.png"
+pickleFile = "/home/antz/GIT314/OpenCV/FaceRec/faceReact/encodings.pickle"
+faceImage = "/home/antz/GIT314/OpenCV/FaceRec/faceReact/dataset/00000.png"
 detection = "cnn"			# "hog" for Raspberry Pi
 
 class RecogClass:
