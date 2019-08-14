@@ -1,3 +1,11 @@
+"""
+Description:
+ Plays specified video file and detects face within
+ 'q' to quit mid-video
+
+Usage:
+python video1.py /home/antz/0_samples/video/Vid_ped/test2.mp4
+"""
 import cv2
 import sys
 import logging as log
