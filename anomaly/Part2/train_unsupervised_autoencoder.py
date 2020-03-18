@@ -1,4 +1,4 @@
-# USAGE
+# USAGE2
 # python train_unsupervised_autoencoder.py --dataset output/images.pickle --model output/autoencoder.model
 
 # For the ERROR on SSL certificates:
