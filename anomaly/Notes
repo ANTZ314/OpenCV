@@ -1,9 +1,29 @@
 ===============================================================
-Anomaly Detecor Series:
------------------------
+PYIMAGESEARCH - Anomaly Detecor Series:
+===============================================================
 
-Part 1	- Simple Train and Test Anomaly detection in images based on Colour Histogram comparisons
 
-Part 2	- Anomaly detection using Auto-Encoders, Keras, Tensor-Flow & Deep Learning
+INTRO:
+------
+Intro to anomaly detection with OpenCV, Computer Vision, and scikit-learn
+https://www.pyimagesearch.com/2020/01/20/intro-to-anomaly-detection-with-opencv-computer-vision-and-scikit-learn/
 
-update
+
+PART 1:
+-------
+Autoencoders with Keras, TensorFlow, and Deep Learning (today’s tutorial)
+https://www.pyimagesearch.com/2020/02/17/autoencoders-with-keras-tensorflow-and-deep-learning/
+
+
+PART 2:
+-------
+Denoising autoenecoders with Keras and TensorFlow (next week’s tutorial)
+https://www.pyimagesearch.com/2020/02/24/denoising-autoencoders-with-keras-tensorflow-and-deep-learning/
+
+
+PART 3:
+-------
+Anomaly detection with Keras, TensorFlow, and Deep Learning (tutorial two weeks from now)
+
+ 
+
