@@ -1,4 +1,19 @@
 ===================================
+RasPi - Quick Install:
+===================================
+sudo apt-get install python-opencv		<-- [V2.4.9.1]
+sudo pip install imutils
+---------------
+dlib - own note
+---------------
+
+===================================
+opencv 4
+===================================
+https://www.pyimagesearch.com/2018/08/15/how-to-install-opencv-4-on-ubuntu/
+
+
+===================================
 Install OpenCV3 on Ubunt 16.4:
 -> Using Python3 and no virtual_env
 ===================================

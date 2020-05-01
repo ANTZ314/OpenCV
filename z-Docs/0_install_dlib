@@ -2,6 +2,11 @@
 INSTALLING DLIB:
 ================
 
+
+Link:
+https://www.pyimagesearch.com/2017/05/01/install-dlib-raspberry-pi/
+
+
 --------------------------------------------------------------
 sudo nano /etc/dphys-swapfile
 
