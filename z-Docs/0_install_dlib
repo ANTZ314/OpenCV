@@ -51,5 +51,27 @@ pip install scikit-image
 
 pip install dlib
 
+
+
+--------------------------------------------------------------
+Return Setting back to default:
 --------------------------------------------------------------
 
+sudo raspi-config
+
+Advanced Options => Memory Split
+16 -> 128
+
+Boot Options => Desktop / CLI => ? ?  
+
+
+
+sudo nano /etc/dphys-swapfile
+
+--> CONF_SWAPSIZE=1024
+
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
+
+free -m
+--------------------------------------------------------------
