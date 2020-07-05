@@ -11,6 +11,10 @@ def detect(image):
 	gradX = cv2.Sobel(gray, ddepth = cv2.cv.CV_32F, dx = 1, dy = 0, ksize = -1)
 	gradY = cv2.Sobel(gray, ddepth = cv2.cv.CV_32F, dx = 0, dy = 1, ksize = -1)
 
+	# OpenC 3+
+	#gradX = cv2.Sobel(gray, ddepth = cv2.CV_32F, dx = 1, dy = 0, ksize = -1)
+	#gradY = cv2.Sobel(gray, ddepth = cv2.CV_32F, dx = 0, dy = 1, ksize = -1)
+
 	# subtract the y-gradient from the x-gradient
 	gradient = cv2.subtract(gradX, gradY)
 	gradient = cv2.convertScaleAbs(gradient)
@@ -40,6 +44,8 @@ def detect(image):
 	c = sorted(cnts, key = cv2.contourArea, reverse = True)[0]
 	rect = cv2.minAreaRect(c)
 	box = np.int0(cv2.cv.BoxPoints(rect))
+	# CV3+
+	#box = np.int0(cv2.BoxPoints(rect))
 
 	# return the bounding box of the barcode
 	return box

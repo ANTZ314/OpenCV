@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+Usage:
+python ...
+"""
+
 ## OpenCV3 with Python 3 ##
 import cv2
 import sys
@@ -8,8 +13,8 @@ class faceCntClass:
 	# Define image file path:
 	path = '../pics/'
 	#file0 = '../pics'										
-	file0 = '/home/antz/0_CV3/pics'
-	file1 = '/home/antz/0_CV3/pics/gr0.jpg'				# single image
+	file0 = '/home/antz/0_samples/z_mix/face/'
+	file1 = '/home/antz/0_samples/z_mix/face/gr0.jpg'				# single image
 	name = ''
 	
 	def __init__(self, **kwargs):
