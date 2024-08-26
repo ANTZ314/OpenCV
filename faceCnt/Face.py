@@ -2,7 +2,7 @@
 """
 Created on: 	[2017-05-09]
 @author: 		Antony Smith
-@description: 	Opens image at parsed image location counts faces
+@description: 	Opens image at predefined location counts faces
 				If file doesn't exist, creates file and appends
 				image directory/name.jpg and number of faces counted
 
